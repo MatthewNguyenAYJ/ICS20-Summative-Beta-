@@ -14,7 +14,7 @@ function draw() {
   
   //blackHole Interactive
   fill(25,29,35);
-  stroke(1);
+  stroke(1,25,29,45);
   strokeWeight(12);
   ellipse(960,540,575,575);
   

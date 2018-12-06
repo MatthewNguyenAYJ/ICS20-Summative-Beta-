@@ -2,7 +2,7 @@ var backgroundImg;
 
   function setup(){
   backgroundImg = loadImage("244.jpg");
-  createCanvas(1920,1080)
+  createCanvas(1280,640)
 
 }
  
@@ -10,7 +10,7 @@ function draw() {
   
   //background
   
-  image(backgroundImg,10,10,1920,1080);  
+  image(backgroundImg,10,10,1280,640);  
   
   //blackHole Interactive
   fill(25,29,35);

@@ -16,12 +16,12 @@ function draw() {
   fill(25,29,35);
   stroke(1,25,29,45);
   strokeWeight(12);
-  ellipse(960,540,575,575);
+  ellipse(640,320,350,350);
   
   //Fake Square (for clicking)
   fill(25,29,35);
   noStroke();
-  rect(758.5,340.5,400,400);
+  rect(515,195,250,250);
   
   // text("BlackHole",270,235,200,480);
   fill(255,255,245);

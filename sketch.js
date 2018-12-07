@@ -2,7 +2,7 @@ var backgroundImg;
 
   function setup(){
   backgroundImg = loadImage("1391869903220.png");
-  createCanvas(1280,640)
+  createCanvas(1080,640)
 
 }
  
@@ -13,14 +13,14 @@ var blackHole = function(){
   fill(25,29,35);
   stroke(1,25,29,45);
   strokeWeight(12);
-  ellipse(640,280,blackHoleRadius,blackHoleRadius);
+  ellipse(575,280,blackHoleRadius,blackHoleRadius);
 }
 
 var fakeSquare = function() {
   //fake Square (for clicking)
   fill(25,29,35);
   noStroke();
-  rect(515,155,250,250);
+  rect(449.5,155,250,250);
 }
 
 var blackholeText = function(){
@@ -38,8 +38,8 @@ function draw() {
   blackHole();
   blackholeText();
   
-  if(mouseIsPressed) {
+    if(mouseIsPressed) {
     
-    blackHoleRadius +=300;
+    blackHoleRadius +=450;
   }
 }

@@ -13,14 +13,14 @@ var blackHole = function(){
   fill(25,29,35);
   stroke(1,25,29,45);
   strokeWeight(12);
-  ellipse(575,280,blackHoleRadius,blackHoleRadius);
+  ellipse(540,280,blackHoleRadius,blackHoleRadius);
 }
 
 var fakeSquare = function() {
   //fake Square (for clicking)
   fill(25,29,35);
   noStroke();
-  rect(449.5,155,250,250);
+  rect(414.5,155,250,250);
 }
 
 var blackholeText = function(){

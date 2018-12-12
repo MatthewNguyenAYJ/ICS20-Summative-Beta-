@@ -12,7 +12,7 @@ var blackHole = function(){
   //blackHole Interactive
   fill(25,29,35);
   stroke(1,25,29,45);
-  strokeWeight(12);
+  strokeWeight(12);                           
   ellipse(540,280,blackHoleRadius,blackHoleRadius);
 }
 
@@ -22,24 +22,41 @@ var fakeSquare = function() {
   noStroke();
   rect(414.5,155,250,250);
 }
-
 var blackholeText = function(){
-  // text("BlackHole",270,235,200,480);
   fill(255,255,245);
+ 	text("BlackHole",445,270,200,480);
   textSize(45);
   textFont();
+
 }
+
+//levels and Scene
+var  currentScene;
+
+
+
+var bhAni = function(){
+  for(var i=0; blackHoleRadius<3000; i++){
+  blackHoleRadius+=5;
+  }
+};
 
 function draw() {
   
   image(backgroundImg,10,10,1280,640); 
   
+  
+  
   fakeSquare();
   blackHole();
   blackholeText();
-  
-    if(mouseIsPressed) {
-    
-    blackHoleRadius +=450;
+  blackHoleRadius+=1;
+   
+  mouseClicked= function(){
+  setTimeout(bhAni(),8000);
+  blackHoleRadius+=5;
   }
-}
+   
+  }
+  
+  
